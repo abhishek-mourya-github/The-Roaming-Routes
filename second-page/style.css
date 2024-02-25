@@ -1,0 +1,271 @@
+@font-face {
+    font-family: neon;
+    src: url(/TiltNeon-Regular-VariableFont_XROT_YROT.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neon;
+}
+
+ html , body{
+    width: 100%;
+    height: 100%;
+ }
+
+.cursor{
+     height: 180px;
+     width: 180px;
+     background-color: rgb(225, 140, 189) ;
+     border-radius:50% ;
+     position: fixed;
+     transform: translate(-50%,-50%) scale(0);
+     
+}
+
+ .main{
+    width: 100%;
+ }
+ 
+ .back{
+    width: 100%;
+    height: 100vh;
+ }
+ 
+ .back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+ }
+ 
+.workingarea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.nav h1{
+    font-size: 3vw;
+}
+
+.nleft , .nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    font-family: neon ;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0 , -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heroleft {
+   min-width: 50%;
+}
+
+.heroleft .elem{
+    position: relative;
+    height: 11vw;
+    top: 3vw;
+    overflow: hidden;
+}
+
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+.heroleft .elem h1{
+    position: absolute;
+    top:100% ;
+    left: 0;
+    line-height: 0.9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11.5vw;
+}
+
+
+.heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 18%;
+    color: white;
+ }
+
+.heroright p{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.heroright p:nth-child(1){
+    margin-top: 4vw;
+    margin-bottom: 50px;
+}
+
+.heroright p:nth-child(2){
+    margin-bottom: 50px;
+}
+
+.heroright p:nth-child(3){
+    margin-bottom: 50px;
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+
+}
+
+.page2 .elem{
+    height:100%;
+    width: 31%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+
+.page2 .elem .dets{
+    height: 60px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page2 .dets a {
+    text-decoration: none;
+    color:rgb(53, 53, 53);
+}
+
+.page2 .elem .dets h1{
+    font-size: 3vw;
+    color: black;
+    transition: ease 1s;
+}
+
+
+.page2 .elem .dets:hover{
+    height: 150px;
+    border-radius: 50px;
+    transition: ease-in-out 0.2s;
+}
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+
+.page3 .child{
+    height:100%;
+    width: 31%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3 .child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.2;
+}
+
+.page3 .child .dets{
+    height: 60px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page3 .dets a {
+    text-decoration: none;
+    color:rgb(53, 53, 53);
+}
+
+.page3 .child .dets h1 a{
+    font-size: 3vw;
+}
+
+.page3 .child .dets:hover{
+    height: 150px;
+    border-radius: 50px;
+    transition: ease-in-out 0.2s;
+}
+

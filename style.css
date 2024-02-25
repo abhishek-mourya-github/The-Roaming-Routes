@@ -1,0 +1,216 @@
+@font-face {
+    font-family: neon ;
+    src: url(./TiltNeon-Regular-VariableFont_XROT_YROT.woff);
+}
+
+@font-face {
+    font-family: sacra;
+    src: url(./Sacramento-Regular.woff);
+}
+
+@font-face {
+    font-family: nature;
+    src: url(./naturebeautypersonaluse-9y2dk.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left_side_color {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 55%;
+    height: 100vh;
+    background-color: #a8e6cf;
+}
+
+.right_side_color {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: 100vh;
+    background-color: #3baea0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6vw;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.left_text{
+   padding-left: 5vw;
+   font-size: 2.7vw;
+   font-family: neon;
+   font-weight: 100;
+   letter-spacing: 0.01px;
+}
+
+.left_text a{
+    text-decoration: none;
+}
+
+.left_text a:hover{
+    cursor: pointer;
+}
+
+.right_text{
+    display: flex;
+    gap: 2.5vw;
+    font-size: 1vw;
+    font-family: neon;
+    padding-right: 2.2vw;
+}
+
+.right_text a {
+    text-decoration: none;
+}
+
+.right_text a:hover{
+    cursor: pointer;
+}
+
+.inner_box{
+    position: absolute;
+    top: 9vw;
+    right: 0vw;
+    width: 90%;
+    height: 75%;
+}
+
+.inner_box .innerbox_uppertext h1{
+    font-family: nature;
+    font-size: 6vw;
+    letter-spacing: 4px;
+    line-height: 6.5vw;
+    font-weight: 300;
+}
+
+.inner_box .innerbox_middletext{
+      margin-top: 3vw;
+      width: 60%;
+}
+
+.inner_box .innerbox_middletext p{
+    font-family: neon ;
+    font-size: 1.2vw;
+}
+
+.inner_box .innerbox_button{
+    margin-top: 2.5vw;
+}
+
+.inner_box .innerbox_button a{
+    color: white;
+    text-decoration: none;
+}
+.inner_box .innerbox_button button{
+    height: 3vw;
+    width: 15vw;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-family: neon;
+    font-size: 1.2vw;
+}
+
+.inner_box .innerbox_button button{
+    text-align: none;
+}
+
+.innerbox_button button:hover{
+    cursor: pointer;
+    scale: 1.002;
+}
+
+.container_left{
+    position:relative;
+    max-height:  100vh;
+    float:left;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    overflow-y:auto;
+  }
+
+  .container_right{
+    position:relative;
+    max-height:  100vh;
+    float:right;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    overflow-y:auto;
+  }
+
+ .container_right .card-home{
+    position:absolute;
+    margin:1vw;
+    top:-3vw;
+    animation: scroll 10s linear 1s infinite;
+  }
+
+  .container_left .card-home{
+    position:absolute;
+    margin:1.5vw;
+    top:-3vw;
+    animation: scroll 10s linear 1s infinite;
+  }
+
+
+  @keyframes scroll {
+      100% { top: -100%; }
+  }
+
+  @keyframes scroll {
+    100% { top: -100%; }
+}
+
+.container_right::-webkit-scrollbar {
+    display: none;
+}
+
+.container_right {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+.container_left::-webkit-scrollbar {
+    display: none;
+}
+
+.container_left {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+.card-home img{
+    object-fit: cover ;
+    width:18vw;
+    height:30vw;
+    margin:2vw 1vw;
+    border-radius: 120px;
+}

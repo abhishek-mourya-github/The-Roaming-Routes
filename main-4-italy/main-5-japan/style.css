@@ -1,0 +1,497 @@
+@font-face {
+  font-family: neon;
+  src: url(/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.page1 {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4vw;
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.nav-first {
+  padding: 7vw;
+  gap: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-first a {
+  text-decoration: none;
+  font-family: neon;
+  font-size: 1.2vw;
+  color: black;
+}
+
+.nav-middle h1 {
+  font-family: neon;
+  font-size: 2.5vw;
+}
+
+.nav-last {
+  padding: 7vw;
+  gap: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-last a {
+  text-decoration: none;
+  font-family: neon;
+  font-size: 1.2vw;
+  color: black;
+}
+
+.container-1 {
+  width: 100%;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.container-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45vh;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.container-text {
+  display: flex;
+  width: 88%;
+  height: 90%;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  line-height: 9vw;
+}
+
+.left-text h1:nth-child(1) {
+  font-family: neon;
+  font-size: 7.5vw;
+  font-weight: 100;
+}
+
+.left-text h1:nth-child(2) {
+  font-family: neon;
+  font-size: 11vw;
+  font-weight: 500;
+}
+
+.right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+.right-text h1 {
+  margin-bottom: 1vw;
+  font-family: neon;
+  font-size: 2vw;
+}
+
+.right-text p {
+  font-family: neon;
+  font-size: 1.15vw;
+}
+
+.page3 {
+  width: 100%;
+  height: 420vh;
+  overflow: hidden;
+}
+
+.page3 .container-2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 10vw;
+  top: 5vw;
+  width: 80%;
+  height: 35vw;
+}
+
+.leftpart {
+  width: 65%;
+  height: 100%;
+}
+
+.serial-no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12vw;
+  width: 25%;
+}
+
+.serial-no h1 {
+  color: rgb(0, 0, 0);
+  font-size: 12vw;
+  opacity: 0.2;
+}
+
+.container-2 .rightpart {
+  width: 35%;
+  height: 100%;
+}
+
+.container-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.info {
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  color: black;
+}
+
+.info h1 {
+  margin-top: 0.8vw;
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 5vw;
+  float: left;
+}
+
+.info p {
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 1.3vw;
+  float: left;
+}
+
+.info a {
+  font-family: neon;
+  font-size: 1.4vw;
+  text-decoration: none;
+}
+
+.page3 .container-3 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 10vw;
+  top: 10vw;
+  width: 80%;
+  height: 34vw;
+}
+
+.container-3 .leftpart {
+  width: 35%;
+  height: 100%;
+}
+
+.container-3 img {
+  height: 100%;
+  width: 100%;
+}
+
+.container-3 .rightpart {
+  width: 62%;
+  height: 100%;
+}
+
+.container-3 .serial-no-2 {
+  position: absolute;
+  top: 0;
+  left: 43%;
+  height: 12vw;
+  width: 25%;
+}
+
+.serial-no-2 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 12vw;
+  opacity: 0.2;
+}
+
+.info-1 {
+  position: relative;
+  top: 5vw;
+  left: 9vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  color: black;
+}
+
+.info-1 h1 {
+  margin-top: 0.8vw;
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 5vw;
+  float: left;
+}
+
+.info-1 p {
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 1.3vw;
+  float: left;
+}
+.info-1 a {
+  font-family: neon;
+  font-size: 1.4vw;
+  text-decoration: none;
+}
+
+.page3 .container-4 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 10vw;
+  top: 15vw;
+  width: 80%;
+  height: 35vw;
+}
+
+.leftpart {
+  width: 62%;
+  height: 100%;
+}
+
+.serial-no-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12vw;
+  width: 25%;
+}
+
+.serial-no-3 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 12vw;
+  opacity: 0.2;
+}
+
+.rightpart {
+  width: 38%;
+  height: 100%;
+}
+
+.container-4 img {
+  height: 100%;
+  width: 100%;
+}
+
+.info-2 {
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  color: black;
+}
+
+.info-2 h1 {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 4.8vw;
+  float: left;
+}
+
+.info-2 p {
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 1.3vw;
+  float: left;
+}
+
+.info-2 a {
+  font-family: neon;
+  font-size: 1.4vw;
+  text-decoration: none;
+}
+
+.page3 .container-5 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 10vw;
+  top: 20vw;
+  width: 80%;
+  height: 36vw;
+}
+
+.container-5 .leftpart {
+  width: 35%;
+  height: 100%;
+}
+
+.container-5 img {
+  height: 100%;
+  width: 100%;
+}
+
+.container-5 .rightpart {
+  width: 60%;
+  height: 100%;
+}
+
+.container-5 .serial-no-4 {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 12vw;
+  width: 25%;
+}
+
+.serial-no-4 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 12vw;
+  opacity: 0.2;
+}
+
+.info-3 {
+  position: relative;
+  top: 5vw;
+  left: 9vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  color: black;
+}
+
+.info-3 h1 {
+  margin-top: 0.8vw;
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 4vw;
+  float: left;
+}
+
+.info-3 p {
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 1.3vw;
+  float: left;
+}
+
+.info-3 a {
+  font-family: neon;
+  font-size: 1.4vw;
+  text-decoration: none;
+}
+
+.page3 .container-6 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 10vw;
+  top: 25vw;
+  width: 80%;
+  height: 35vw;
+}
+
+.leftpart {
+  width: 62%;
+  height: 100%;
+}
+
+.serial-no-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12vw;
+  width: 25%;
+}
+
+.serial-no-5 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 12vw;
+  opacity: 0.2;
+}
+
+.rightpart {
+  width: 38%;
+  height: 100%;
+}
+
+.container-6 img {
+  height: 100%;
+  width: 100%;
+}
+
+.info-4 {
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  color: black;
+}
+
+.info-4 h1 {
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 4.8vw;
+  float: left;
+}
+
+.info-4 p {
+  margin-bottom: 2vw;
+  font-family: neon;
+  font-size: 1.3vw;
+  float: left;
+}
+
+.info-4 a {
+  font-family: neon;
+  font-size: 1.4vw;
+  text-decoration: none;
+}
